@@ -23,7 +23,7 @@ delayMicroseconds(10);
 digitalWrite(trigPin, LOW);
 
 duration = pulseIn(echoPin, HIGH);
-dist = (duration/2) / 29.1;    //to obtain distance as speed of sound is 343m/s that is (in cm/microseconds) equal to 1/29.1
+dist = (duration/4) / 29.1;    //to obtain distance as speed of sound is 343m/s that is (in cm/microseconds) equal to 1/29.1
 
  if ( dist<10 ) {
  Serial.println("the distance is less than 10");
